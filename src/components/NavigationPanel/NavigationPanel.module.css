@@ -1,0 +1,10 @@
+.navContainer{
+    border:1px solid red;
+
+}
+.navContainer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
