@@ -3,6 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import S from "./SimpleSlider.module.css"
+import * as React from "react";
+import {PopUpTitleWithSlowUnderline} from "../common/PopUpTiTleWithSlowUnderline/PopUpTitleWithSlowUnderline";
+
+
 
 export const SimpleSlider = () => {
     const settings = {
@@ -12,36 +16,61 @@ export const SimpleSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed:5000,
-        beforeChange: (oldIndex, newIndex) => {
-            console.log(newIndex);
-            console.log(oldIndex);
-        },
+        autoplaySpeed: 5000,
+        fade: true,
+        lazyLoad: true,
+        className: "center",
+        nextArrow: <SampleNextArrow/>,
+        prevArrow: <SamplePrevArrow/>
 
     };
-    const windowOuterWidth = window.outerWidth
-    const windowInnerHeight = window.innerHeight
-    console.log(windowInnerHeight)
-    return(
-        <div>
-        <Slider {...settings}>
-                <div>
-                    <video autoPlay muted loop className={S.myVideo}
-                           style={{height:`${windowInnerHeight}px`}}>
-                        <source src="https://apextest12.b-cdn.net/vid1.mp4" type="video/mp4"/>
-                    </video>
-                </div>
-                <div>
-                    <video autoPlay muted loop className={S.myVideo} >
-                        <source src="https://apextest12.b-cdn.net/vid2.mp4" type="video/mp4"/>
-                    </video>
-                </div>
-                <div>
-                    <video autoPlay muted loop className={S.myVideo} >
-                        <source src="https://apextest12.b-cdn.net/vid3.mp4" type="video/mp4"/>
-                    </video>
-                </div>
-            </Slider>
-    </div>
+    return (
+        <div style={{height: '100%'}}>
+            <video autoPlay muted loop className={S.myVideo}>
+                <source src="https://apextest12.b-cdn.net/vid2.mp4" type="video/mp4"/>
+            </video>
+            <div className={S.videoTitle}>
+                <PopUpTitleWithSlowUnderline title={'Waterfall'} text={'Chicago,il'} buttonName={'view project'}/>
+            </div>
+        </div>
+        // <Slider {...settings}>
+        //         <div>
+        //             <video autoPlay muted loop className={S.myVideo}>
+        //                 <source src="https://apextest12.b-cdn.net/vid1.mp4" type="video/mp4"/>
+        //             </video>
+        //         </div>
+        //         <div>
+        //             <video autoPlay muted loop className={S.myVideo} >
+        //                 <source src="https://apextest12.b-cdn.net/vid2.mp4" type="video/mp4"/>
+        //             </video>
+        //         </div>
+        //         <div>
+        //             <video autoPlay muted loop className={S.myVideo} >
+        //                 <source src="https://apextest12.b-cdn.net/vid3.mp4" type="video/mp4"/>
+        //             </video>
+        //         </div>
+        //     </Slider>
+
     )
+}
+function SampleNextArrow(props) {
+    const {className, style, onClick} = props;
+    return (
+        <div
+            className={className}
+            style={{...style, display: "none", background: "red"}}
+            onClick={onClick}
+        />
+    );
+}
+
+function SamplePrevArrow(props) {
+    const {className, style, onClick} = props;
+    return (
+        <div
+            className={className}
+            style={{...style, display: "none", background: "green"}}
+            onClick={onClick}
+        />
+    );
 }

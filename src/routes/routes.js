@@ -1,8 +1,8 @@
 import {createBrowserRouter} from "react-router-dom";
 import Root from "../root";
-import Contacts from "../views/Contacts";
+import Contacts from "../pages/Contacts";
 import React from "react";
-import ErrorPage from "../views/404";
+import ErrorPage from "../pages/404";
 
 export const router = createBrowserRouter([
     {

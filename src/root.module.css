@@ -39,14 +39,14 @@ ul, li {
 }
 .root{
     height: 100vh;
+    overflow: hidden;
 }
 
 .myVideo{
-     object-fit: cover;
+    object-fit: cover;
     height: 100%;
     width: 100%;
     float: left;
     top: 0;
     padding: 0;
-
 }
