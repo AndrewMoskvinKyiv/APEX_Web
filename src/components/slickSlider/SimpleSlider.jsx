@@ -27,7 +27,7 @@ export const SimpleSlider = () => {
     return (
         <div style={{height: '100%'}}>
             <video autoPlay muted loop className={S.myVideo}>
-                <source src="https://apextest12.b-cdn.net/vid2.mp4" type="video/mp4"/>
+                <source src="https://apextest12.b-cdn.net/vid4.mp4" type="video/mp4"/>
             </video>
             <div className={S.videoTitle}>
                 <PopUpTitleWithSlowUnderline title={'Waterfall'} text={'Chicago,il'} buttonName={'view project'}/>

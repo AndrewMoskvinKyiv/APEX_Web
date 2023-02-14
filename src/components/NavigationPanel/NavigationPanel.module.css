@@ -1,5 +1,4 @@
 .navContainer{
-    border:1px solid red;
 
 }
 .navContainer ul {
@@ -7,4 +6,20 @@
     flex-direction: row;
     gap: 20px;
     justify-content: center;
+}
+.headerLink{
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    font-family: 'Apexnewweb book',sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.headerLink:hover{
+    color: #e0193e;
+    font-weight: bold;
 }

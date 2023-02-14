@@ -13,37 +13,55 @@ export default function  NavigationPanel() {
             <ul>
                 <li>
                     <NavLink
+                        className={S.headerLink}
                         to="contacts"
                         style={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }
                     >
-                        Messages
+                        projects
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
                         to="tasks"
-                        className={({ isActive }) =>
+                        className={S.headerLink}
+                        style={({ isActive }) =>
                             isActive ? activeClassName : undefined
                         }
                     >
-                        Tasks
+                        about
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="tasks">
                         {({ isActive }) => (
                             <span
-                                className={
+                                className={S.headerLink}
+                                style={
                                     isActive ? activeClassName : undefined
                                 }
                             >
-                Tasks
+                contacts
               </span>
                         )}
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink to="tasks">
+                        {({ isActive }) => (
+                            <span
+                                className={S.headerLink}
+                                style={
+                                    isActive ? activeClassName : undefined
+                                }
+                            >
+               news+awards
+              </span>
+                        )}
+                    </NavLink>
+                </li>
+
             </ul>
         </nav>
     )
