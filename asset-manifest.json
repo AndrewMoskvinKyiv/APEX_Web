@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/APEX_Web/static/css/main.b974f775.css",
-    "main.js": "/APEX_Web/static/js/main.a7d43687.js",
+    "main.css": "/APEX_Web/static/css/main.8e5a255d.css",
+    "main.js": "/APEX_Web/static/js/main.ad2dbbee.js",
     "static/js/787.287cc51c.chunk.js": "/APEX_Web/static/js/787.287cc51c.chunk.js",
     "static/media/logo.webp": "/APEX_Web/static/media/logo.9a9c6c4a404624917b50.webp",
     "static/media/slick.svg": "/APEX_Web/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,12 +9,12 @@
     "static/media/slick.ttf": "/APEX_Web/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/APEX_Web/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/APEX_Web/index.html",
-    "main.b974f775.css.map": "/APEX_Web/static/css/main.b974f775.css.map",
-    "main.a7d43687.js.map": "/APEX_Web/static/js/main.a7d43687.js.map",
+    "main.8e5a255d.css.map": "/APEX_Web/static/css/main.8e5a255d.css.map",
+    "main.ad2dbbee.js.map": "/APEX_Web/static/js/main.ad2dbbee.js.map",
     "787.287cc51c.chunk.js.map": "/APEX_Web/static/js/787.287cc51c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b974f775.css",
-    "static/js/main.a7d43687.js"
+    "static/css/main.8e5a255d.css",
+    "static/js/main.ad2dbbee.js"
   ]
 }
