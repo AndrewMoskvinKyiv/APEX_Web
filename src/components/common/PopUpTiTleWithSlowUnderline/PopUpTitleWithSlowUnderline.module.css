@@ -39,7 +39,6 @@
 }
 .titleBtn{
     position: absolute;
-    bottom: -45px;
     left: 0;
     background-color: transparent;
     animation-duration: 1s;
@@ -51,6 +50,5 @@
     letter-spacing: 4px;
     text-decoration: none;
     text-transform: uppercase;
-    animation-delay: 1.5s;
     cursor: pointer;
 }

@@ -14,7 +14,7 @@ export default function  NavigationPanel() {
                 <li>
                     <NavLink
                         className={S.headerLink}
-                        to="contacts"
+                        to="projects"
                         style={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }
@@ -24,7 +24,7 @@ export default function  NavigationPanel() {
                 </li>
                 <li>
                     <NavLink
-                        to="tasks"
+                        to="team"
                         className={S.headerLink}
                         style={({ isActive }) =>
                             isActive ? activeClassName : undefined
@@ -34,7 +34,7 @@ export default function  NavigationPanel() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="tasks">
+                    <NavLink to="contacts">
                         {({ isActive }) => (
                             <span
                                 className={S.headerLink}
